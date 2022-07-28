@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>LaRP Character Sheet</title>
+</head>
+
+<body>
+    <main>
+        <header class="bottom-border banger-font">
+            <img id="logo" src="./assets/logo.png" alt="black library logo" height="75px">    
+            <div class="name-tag center"><span id="name-id" class="name">Character Name</span>
+                <span id="pronoun-id" class="pronoun">pronouns</span>
+            </div>
+            <div class="dice-roller" id="dice-roller-id">
+                <div class="dice" id="dice-id">dice</div>
+                <div class="result" id="result-id">0</div>
+            </div>
+        </header>
+        <section class="group stats bottom-border banger-font" id="stats-id">
+            <div id="body-stat-id">
+                <h4>BODY: </h4><h4 id="body-mod-id">0</h4>
+            </div>
+            <div id="heart-stat-id">
+                <h4>HEART: </h4><h4 id="heart-mod-id">0</h4>
+            </div>
+            <div id="mind-stat-id">
+                <h4>MIND: </h4><h4 id="mind-mod-id">0</h4>
+            </div>
+        </section>
+        <section class="group bottom-border">
+            <h4 class="banger-font" id="desc-h4-id">Description:</h4>
+            <div id="desc-id"></div>
+        </section>
+        <section class="group bottom-border">
+            <h4 class="banger-font" id="back-h4-id">Background:</h4>
+            <div id="background-id"></div>
+        </section>
+        <section class="group bottom-border">
+            <h4 class="banger-font">Inventory:</h4>
+            <ul id="inventory-list-id"></ul>
+        </section>
+        <section class="group bottom-border">
+            <h4 class="banger-font">Skills:</h4>
+            <ol id="skill-list-id"></ol>
+        </section>
+        <section class="group bottom-border">
+            <h4 class="banger-font">Relationships:</h4>
+            <ol id="relationship-list-id"></ol>
+        </section>
+        <section class="group">
+            <h4 class="banger-font">Bonds:</h4>
+            <ol id="bond-list-id"></ol>
+        </section>
+    </main>
+    <footer>
+        <label for="char-select">Choose a character:
+            <select name="characters" id="char-select">
+                <option value="">-pick a view-</option>
+                <option value="kal">Kal</option>
+                <option value="mel">Mel</option>
+                <option value="chadth">Chadth</option>
+            </select>
+        </label>    
+        <!-- <input type="button" id="color-swap-button" value="Swap Theme"> -->
+        Larp Character sheet 2021
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
